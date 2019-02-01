@@ -10,9 +10,8 @@ use Session;
 
 class PermissionController extends Controller
 {
-   public function __construct() {
+    public function __construct() {
         $this->middleware(['auth', 'isAdmin']); // isAdmin 中间件让具备指定权限的用户才能访问该资源
-
     }
 
     /**
